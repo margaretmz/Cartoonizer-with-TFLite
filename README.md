@@ -9,7 +9,7 @@
 - `int8`: https://storage.googleapis.com/cartoon_gan/model_with_metadata/whitebox_cartoon_gan_int8.tflite
 -->
 
-## Models supporting 520x520 images (with metadata)
+## Models supporting 512x512 images (with metadata)
 - [`float16`](https://storage.googleapis.com/cartoon_gan/fixed_shaped_models/with_metadata/whitebox_cartoon_gan_fp16.tflite)
 - [`dynamic-range`](https://storage.googleapis.com/cartoon_gan/fixed_shaped_models/with_metadata/whitebox_cartoon_gan_dr.tflite)
 - [`int8`](https://storage.googleapis.com/cartoon_gan/fixed_shaped_models/with_metadata/whitebox_cartoon_gan_int8.tflite)
