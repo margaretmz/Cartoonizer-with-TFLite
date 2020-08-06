@@ -13,7 +13,7 @@
 - [`dynamic-range`](https://storage.googleapis.com/cartoon_gan/fixed_shaped_models/with_metadata/whitebox_cartoon_gan_dr.tflite)
 - [`int8`](https://storage.googleapis.com/cartoon_gan/fixed_shaped_models/with_metadata/whitebox_cartoon_gan_int8.tflite)
 
-## `float16` model (with metadata) supporting 384x384 images 
+## `float16` model (with metadata) supporting 224x224 images 
 - [`float16`](https://storage.googleapis.com/cartoon_gan/fixed_shaped_models/with_metadata/whitebox_cartoon_gan_fp16.tflite)
 
 ## Misc
