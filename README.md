@@ -9,12 +9,9 @@
 - `int8`: https://storage.googleapis.com/cartoon_gan/model_with_metadata/whitebox_cartoon_gan_int8.tflite
 -->
 
-## Models (with metadata) supporting 512x512 images 
-- [`dynamic-range`](https://github.com/sayakpaul/Adventures-in-TensorFlow-Lite/releases/download/v0.7.0/whitebox_cartoon_gan_dr.tar.gz)
-- [`int8`](https://github.com/sayakpaul/Adventures-in-TensorFlow-Lite/releases/download/v0.7.0/whitebox_cartoon_gan_int8.tar.gz)
+## Models (with metadata) 
 
-## `float16` model (with metadata) supporting 224x224 images 
-- [`float16`](https://github.com/sayakpaul/Adventures-in-TensorFlow-Lite/releases/download/v0.7.0/whitebox_cartoon_gan_fp16.tar.gz)
+Find the models on [TensorFlow Hub](https://tfhub.dev/sayakpaul/lite-model/cartoongan/dr/1). 
 
 ## Misc
 [Here's](https://github.com/ml-gde/e2e-tflite-tutorials/issues/9) an informative thread on the conversion process of the original CartoonGAN model. 
