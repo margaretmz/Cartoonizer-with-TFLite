@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cartoonizer</string>
+    <string name="about">"Cartoonize an image with a .tflite model."</string>
+    <string name="tflite_model" translatable="false">TFLite Model:</string>
+    <string-array name="tflite_models" translatable="false">
+        <item>Model: White-box CartoonGan Dynamic Range</item>
+        <item>Model: White-box CartoonGan Fp16</item>
+        <item>Model: White-box CartoonGan Int8</item>
+    </string-array>
+</resources>
