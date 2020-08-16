@@ -5,7 +5,7 @@ This is an Android sample app with the White-box CartoonGAN TensorFlow Lite mode
 Please read the detailed instructions on how to create the Android app application in this blog post (TODO: add link).
 
 ## TensorFlow Lite Model
-There are three TensorFlow Lite Models used in the Android app and see the [ml README](../ml/) for details.
+There are three TensorFlow Lite Models included in the Android app and see the [ml](../ml/) README for details.  
 Android Studio ML Model Binding was used to import these models into the Android project.
 
 ## Requirements
