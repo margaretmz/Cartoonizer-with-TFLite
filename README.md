@@ -4,6 +4,8 @@
 
 This is the GitHub repository for an end-to-end tutorial on how to create a Cartoonizer with TFLite. The tutorial demonstrates the steps for TFLite model conversion all the way up to model deployment on an Android App. (TODO: add link to blog post)
 
+<div align="center"><img src="https://i.ibb.co/nCBmvDB/2020-09-03-Cartoonizer-graphic.png" width=500></img></div>
+
 **Cartoonizer with TFLite** is one of the many [End-to-End TensorFlow Lite Tutorials](https://github.com/ml-gde/e2e-tflite-tutorials). See the full list of TensorFlow Lite samples and learning resources on [awesome-tflite](https://github.com/margaretmz/awesome-tflite).
 
 **Authors**: (ML GDEs: Google Developers Experts for Machine Learning)  [Margaret Maynard-Reid](https://twitter.com/margaretmz) and [Sayak Paul](https://twitter.com/RisingSayak)   
