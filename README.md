@@ -1,12 +1,10 @@
 # Cartoonizer with TensorFlow Lite
 
-<div align="center"><img src="https://i.ibb.co/ZXtwJjV/Webp-net-resizeimage.png" width='96' height='96'></img></div>
-
 This is the GitHub repository for an end-to-end tutorial on how to create a Cartoonizer with TFLite. The tutorial demonstrates the steps for TFLite model conversion all the way up to model deployment on an Android App. (TODO: add link to blog post)
 
-<br>
-<div align="center"><img src="https://i.ibb.co/nCBmvDB/2020-09-03-Cartoonizer-graphic.png" width=650></img></div>
-<br>
+<div align="center">
+<img src="images/2020-09-03_Cartoonizer-graphic.png" width=650'/>
+</div>
 
 **Cartoonizer with TFLite** is one of the many [End-to-End TensorFlow Lite Tutorials](https://github.com/ml-gde/e2e-tflite-tutorials). See the full list of TensorFlow Lite samples and learning resources on [awesome-tflite](https://github.com/margaretmz/awesome-tflite).
 
@@ -34,3 +32,5 @@ month = {June}, year = {2020} }
 
 ## Acknowledgement
 We would like to thank Khanh LeViet and Lu Wang (TensorFlow Lite team), Hoi Lam (Android ML), and Soonson Kwon (ML GDEs Google Developers Expert Program), for their collaboration and continuous support.
+
+<div align="center"><img src="images/made-by-ml-gdes.png" width='96' height='96'/></div>
