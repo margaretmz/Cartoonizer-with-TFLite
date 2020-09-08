@@ -11,8 +11,10 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="6dp"
         android:text="@string/about"
+        android:textAppearance="@android:style/TextAppearance.Medium"
         app:layout_constraintBottom_toTopOf="@id/imageview_input"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -22,11 +24,11 @@
         android:id="@+id/imageview_input"
         android:layout_width="224dp"
         android:layout_height="224dp"
-        android:layout_margin="12dp"
+        android:layout_marginBottom="12dp"
         android:background="@color/colorAccent"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_launcher_background"
-        app:layout_constraintBottom_toBottomOf="@id/frame_output"
+        app:layout_constraintBottom_toTopOf="@id/frame_output"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text" />
@@ -36,7 +38,7 @@
         android:layout_width="224dp"
         android:layout_height="224dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/inference_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageview_input">
@@ -54,13 +56,15 @@
             android:layout_height="match_parent" />
     </FrameLayout>
 
-
+    <!-- TODO: Hide this for now and deal with it later with preferences -->
     <TextView
         android:id="@+id/inference_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frame_output" />
