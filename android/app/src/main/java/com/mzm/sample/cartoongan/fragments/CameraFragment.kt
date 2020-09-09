@@ -19,13 +19,11 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.mzm.sample.cartoongan.ImageUtils
 import com.mzm.sample.cartoongan.MainActivity.Companion.getOutputDirectory
 import com.mzm.sample.cartoongan.R
 import kotlinx.android.synthetic.main.fragment_camera.*
 import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
-import java.io.OutputStream
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
@@ -196,7 +194,7 @@ class CameraFragment : Fragment() {
                     }
 
                     // Save bitmap image
-                    val filePath = saveBitmap(bitmap, photoFile)
+                    val filePath = ImageUtils.saveBitmap(bitmap, photoFile)
 
                     // Pass the file path to the next screen
                     val action =
@@ -222,21 +220,6 @@ class CameraFragment : Fragment() {
             ExifInterface.ORIENTATION_ROTATE_270 -> 270
             else -> 0
         }
-    }
-
-    private fun saveBitmap(bitmap: Bitmap?, file: File): String {
-
-        try {
-            val stream: OutputStream = FileOutputStream(file)
-            bitmap?.compress(Bitmap.CompressFormat.JPEG, 100, stream)
-            stream.flush()
-            stream.close()
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
-
-        return file.absolutePath
-
     }
 
     private fun rotateBitmap(bitmap: Bitmap, rotationDegrees: Int): Bitmap {

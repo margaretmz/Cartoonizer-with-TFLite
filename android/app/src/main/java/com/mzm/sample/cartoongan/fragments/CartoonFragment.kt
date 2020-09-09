@@ -5,9 +5,13 @@ import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.*
+import android.widget.Toast
+import androidx.core.graphics.drawable.toBitmap
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
+import com.mzm.sample.cartoongan.ImageUtils
+import com.mzm.sample.cartoongan.MainActivity
 import com.mzm.sample.cartoongan.R
 import com.mzm.sample.cartoongan.ml.WhiteboxCartoonGanDr
 import com.mzm.sample.cartoongan.ml.WhiteboxCartoonGanFp16
@@ -17,6 +21,8 @@ import kotlinx.coroutines.*
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.model.Model
 import java.io.File
+import java.text.SimpleDateFormat
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
@@ -171,7 +177,31 @@ class CartoonFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_save -> saveCartoon()
+        }
         return super.onOptionsItemSelected(item)
+    }
+    private fun saveCartoon(): String {
+
+        val cartoonBitmap = imageview_output.drawable.toBitmap()
+        val file = File(
+            MainActivity.getOutputDirectory(requireContext()),
+            SimpleDateFormat(
+                FILENAME_FORMAT, Locale.US
+            ).format(System.currentTimeMillis()) + "_cartoon.jpg")
+
+        ImageUtils.saveBitmap(cartoonBitmap, file)
+        Toast.makeText(context, "saved to " + file.absolutePath.toString(), Toast.LENGTH_SHORT)
+            .show()
+
+        return file.absolutePath
+
+    }
+
+    companion object {
+        private const val TAG = "CartoonFragment"
+        private const val FILENAME_FORMAT = "yyyy-MM-dd-HH-mm-ss-SSS"
     }
 
 }
