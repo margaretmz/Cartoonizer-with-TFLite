@@ -2,6 +2,8 @@
     <string name="app_name">Cartoonizer</string>
     <string name="about">"Cartoonize an image with a .tflite model."</string>
     <string name="tflite_model" translatable="false">TFLite Model:</string>
+    <string name="share_button_alt">Share</string>
+    <string name="save_button_alt">Save</string>
     <string-array name="tflite_models" translatable="false">
         <item>Model: White-box CartoonGan Dynamic Range</item>
         <item>Model: White-box CartoonGan Fp16</item>
