@@ -1,6 +1,8 @@
 # Cartoonizer with TensorFlow Lite
 
-This is the GitHub repository for an end-to-end tutorial on **how to create a Cartoonizer with TensorFlow Lite**. The tutorial demonstrates the steps for TFLite model saving, conversion and all the way up to model deployment on an Android App. It's one of a series of the [End-to-End TensorFlow Lite Tutorials](https://github.com/ml-gde/e2e-tflite-tutorials). See the full list of TensorFlow Lite samples and learning resources on [awesome-tflite](https://github.com/margaretmz/awesome-tflite). (TODO: add link to blog post)
+This is the GitHub repository for an end-to-end tutorial on **how to create a Cartoonizer with TensorFlow Lite**. The tutorial demonstrates the steps for TFLite model saving, conversion and all the way up to model deployment on an Android App. It's one of a series of the [End-to-End TensorFlow Lite Tutorials](https://github.com/ml-gde/e2e-tflite-tutorials). See the full list of TensorFlow Lite samples and learning resources on [awesome-tflite](https://github.com/margaretmz/awesome-tflite). 
+
+Here’s the link to the tutorial published on the official TensorFlow blog - https://blog.tensorflow.org/2020/09/how-to-create-cartoonizer-with-tf-lite.html.
 
 <p align="center">
 <img src="images/2020-09-03_Cartoonizer-graphic.png" width='650'/>
